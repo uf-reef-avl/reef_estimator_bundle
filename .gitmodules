@@ -1,0 +1,30 @@
+[submodule "reef_control"]
+	path = reef_control
+	url = https://github.com/uf-reef-avl/reef_control
+[submodule "ros_astra_camera"]
+	path = ros_astra_camera
+	url = https://github.com/orbbec/ros_astra_camera
+[submodule "rosflight"]
+	path = rosflight
+	url = https://github.com/rosflight/rosflight
+[submodule "position_to_velocity"]
+	path = position_to_velocity
+	url = https://github.com/uf-reef-avl/position_to_velocity
+[submodule "reef_estimator"]
+	path = reef_estimator
+	url = https://github.com/uf-reef-avl/reef_estimator
+[submodule "reef_msgs"]
+	path = reef_msgs
+	url = https://github.com/uf-reef-avl/reef_msgs
+[submodule "reef_teleop"]
+	path = reef_teleop
+	url = https://github.com/uf-reef-avl/reef_teleop
+[submodule "rgbd_to_velocity"]
+	path = rgbd_to_velocity
+	url = https://github.com/uf-reef-avl/rgbd_to_velocity
+[submodule "ros_vrpn_client"]
+	path = ros_vrpn_client
+	url = https://github.com/uf-reef-avl/ros_vrpn_client
+[submodule "demo_rgbd"]
+	path = demo_rgbd
+	url = https://github.com/uf-reef-avl/demo_rgbd

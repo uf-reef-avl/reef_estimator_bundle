@@ -3,7 +3,7 @@
 	url = https://github.com/uf-reef-avl/reef_control
 [submodule "ros_astra_camera"]
 	path = ros_astra_camera
-	url = https://github.com/orbbec/ros_astra_camera
+	url = https://github.com/uf-reef-avl/ros_astra_camera
 [submodule "rosflight"]
 	path = rosflight
 	url = https://github.com/rosflight/rosflight

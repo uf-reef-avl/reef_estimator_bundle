@@ -34,11 +34,14 @@ building a quadrotor platform to flying using an XBox Controller or flying figur
 3) Clone and build the REEF_Estimator bundle onto the onboard computer:
 
     ```html
-    mkdir -p catkin_ws/src
-    git clone https://github.com/uf-reef-avl/reef_estimator_bundle
-    cd reef_estimator_bundle
-    git submodule update --init --recursive
-    cd .. && catkin build
+       mkdir -p reef_estimator_ws/src
+       cd estimator_ws/src/
+       catkin_init_workspace
+       git clone https://github.com/uf-reef-avl/reef_estimator_bundle
+       cd estimator_bundle
+       git submodule update --init --recursive
+       sudo apt install -y libuvc-dev ros-melodic-joy* libsuitesparse-dev libeigen3-dev libsdl1.2-dev
+       cd ../.. && catkin build
     ```
     **NOTE**: If you have cloned the ROSFlight repo and the REEF Estimator bundle in estimator_ws/src, the compiler will throw an error when building. Delete the original ROSFlight package you built (not the one inside the bundle. This will save a tonne of time when pull new changes to the REEF Estimator code).
             
@@ -60,14 +63,10 @@ take a look at our [camera calibration](https://bitbucket.org/reefavl/camear_cal
     
     **NOTE** Clone and build the PlotJuggler package. This package will help you plot ROS Topics
     ```html
-       mkdir -p reef_estimator_ws/src
-       cd estimator_ws/src/
-       catkin_init_workspace
-       git clone https://github.com/uf-reef-avl/reef_estimator_bundle
-       cd estimator_bundle
-       git submodule update --init --recursive
-       sudo apt install -y libuvc-dev ros-melodic-joy* libsuitesparse-dev libeigen3-dev libsdl1.2-dev
-       cd ../.. && catkin build
+       cd catkin_ws/src
+       sudo apt-get install qtbase5-dev libqt5svg5-dev ros-kinetic-ros-type-introspection ros-kinetic-plotjuggler
+       cd ..
+       catkin_make
     ```
  
 

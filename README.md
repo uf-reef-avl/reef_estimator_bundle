@@ -60,10 +60,14 @@ take a look at our [camera calibration](https://bitbucket.org/reefavl/camear_cal
     
     **NOTE** Clone and build the PlotJuggler package. This package will help you plot ROS Topics
     ```html
-       cd catkin_ws/src
-       sudo apt-get install qtbase5-dev libqt5svg5-dev ros-kinetic-ros-type-introspection ros-kinetic-plotjuggler
-       cd ..
-       catkin_make
+       mkdir -p reef_estimator_ws/src
+       cd estimator_ws/src/
+       catkin_init_workspace
+       git clone https://github.com/uf-reef-avl/reef_estimator_bundle
+       cd estimator_bundle
+       git submodule update --init --recursive
+       sudo apt install -y libuvc-dev ros-melodic-joy* libsuitesparse-dev libeigen3-dev libsdl1.2-dev
+       cd ../.. && catkin build
     ```
  
 

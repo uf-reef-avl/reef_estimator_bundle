@@ -50,12 +50,12 @@ take a look at our [camera calibration](https://bitbucket.org/reefavl/camear_cal
 4) If you do not have motion capture measure the displacement between the IMU and the camera's optical frame along with the rotations. Convert the rotations to quaternions. 
 5) Take the output of Step 3 or Step 4 and enter them into the camera_to_body.yaml files in the following packages:
     - [REEF_Estimator](https://github.com/uf-reef-avl/reef_estimator/blob/master/params/dodo_camera.yaml)
-    - [Odom_to_Velocity](https://github.com/uf-reef-avl/odom_to_velocity/src/master/params/camera_to_body.yaml)
+    - [RGBD_to_Velocity](https://github.com/uf-reef-avl/rgbd_to_velocity/blob/master/params/kiwi_camera.yaml)
     - [Position_to_Velocity](https://github.com/uf-reef-avl/position_to_velocity/blob/master/params/camera_to_body.yaml)
 6) After this step, we suggest you read the documentation in each of the packages in the bundle. Even if not EVERY package we highly recommend you go through these packages at least
     - [REEF_Estimator](https://github.com/uf-reef-avl/reef_estimator)
     - [REEF_Control](https://github.com/uf-reef-avl/reef_control)
-    - [Odom_to_Velocity](https://github.com/uf-reef-avl/odom_to_velocity)
+    - [Odom_to_Velocity](https://github.com/uf-reef-avl/rgbd_to_velocity)
     - [REEF_Teleop](https://github.com/uf-reef-avl/reef_teleop)   
 7) Once you've read through the documentation, we recommend that you get test the estimator while flying open-loop. The [record_raw.launch](https://bitbucket.org/reefavl/reef_estimator/src/master/launch/record_raw.launch) file will help record a bagfile with topics that is needed by the the estimator to run offline.
     

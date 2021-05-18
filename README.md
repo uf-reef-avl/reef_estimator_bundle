@@ -55,7 +55,7 @@ take a look at our [camera calibration](https://bitbucket.org/reefavl/camear_cal
 6) After this step, we suggest you read the documentation in each of the packages in the bundle. Even if not EVERY package we highly recommend you go through these packages at least
     - [REEF_Estimator](https://github.com/uf-reef-avl/reef_estimator)
     - [REEF_Control](https://github.com/uf-reef-avl/reef_control)
-    - [Odom_to_Velocity](https://github.com/uf-reef-avl/rgbd_to_velocity)
+    - [RGBD_to_Velocity](https://github.com/uf-reef-avl/rgbd_to_velocity)
     - [REEF_Teleop](https://github.com/uf-reef-avl/reef_teleop)   
 7) Once you've read through the documentation, we recommend that you get test the estimator while flying open-loop. The [record_raw.launch](https://bitbucket.org/reefavl/reef_estimator/src/master/launch/record_raw.launch) file will help record a bagfile with topics that is needed by the the estimator to run offline.
     

@@ -16,6 +16,20 @@ It consists the following packages
 - **Astra Launch Driver** - Launch files to get the Orbbec Astra cameras to work
 - **Dubins Path** - Path planning algorithm to convert position to velocity requests 
 
+   
+## If you use this work, please cite as:
+
+```asm
+@inproceedings{ramos2019reef,
+  title={REEF Estimator: A Simplified Open Source Estimator and Controller for Multirotors},
+  author={Ramos, J Humberto and Ganesh, Prashant and Warke, William and Volle, Kyle and Brink, Kevin},
+  booktitle={2019 IEEE National Aerospace and Electronics Conference (NAECON)},
+  pages={606--613},
+  year={2019},
+  organization={IEEE}
+}
+``` 
+
 ## Wiki
 Please read the [WIKI](https://github.com/uf-reef-avl/reef_estimator_bundle/wiki) for build instructions and additional documentation.
 
@@ -81,17 +95,5 @@ take a look at our [camera calibration](https://bitbucket.org/reefavl/camear_cal
  
  When developing we used the Optitrack system to generate ground truth. Optitrack due to its popularity in the animation field produces estimates in the (EDN) coordinate frame. Hence the ros_vrpn_client is used to rotate it to the NED frame. If youre using VICON you will not need this since VICON reports estimates in NED frame. You can instead use the [vrpn_client_ros](http://wiki.ros.org/vrpn_client_ros) package.
  
-   
-## Citation
 
-```asm
-@inproceedings{ramos2019reef,
-  title={REEF Estimator: A Simplified Open Source Estimator and Controller for Multirotors},
-  author={Ramos, J Humberto and Ganesh, Prashant and Warke, William and Volle, Kyle and Brink, Kevin},
-  booktitle={2019 IEEE National Aerospace and Electronics Conference (NAECON)},
-  pages={606--613},
-  year={2019},
-  organization={IEEE}
-}
-``` 
 

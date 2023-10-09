@@ -57,7 +57,7 @@ building a quadrotor platform to flying using an XBox Controller or flying figur
        sudo apt install -y libuvc-dev ros-melodic-joy* libsuitesparse-dev libeigen3-dev libsdl1.2-dev
        cd ../.. && catkin build
     ```
-    **NOTE**: If you have cloned the ROSFlight repo and the REEF Estimator bundle in estimator_ws/src, the compiler will throw an error when building. Delete the original ROSFlight package you built (not the one inside the bundle. This will save a tonne of time when pull new changes to the REEF Estimator code).
+    **IMPORTANT: You may need to remove the joy package as it may not be found in ROS NOETIC**:  If you have cloned the ROSFlight repo and the REEF Estimator bundle in estimator_ws/src, the compiler will throw an error when building. Delete the original ROSFlight package you built (not the one inside the bundle. This will save a tonne of time when pull new changes to the REEF Estimator code).
             
 3) If you do have motion capture it is very important to perform a camera calibration. This involves both extrisic and intrisic calibration. Please 
 take a look at our [camera calibration](https://bitbucket.org/reefavl/camear_calibration_bundle/src) package to do this. There is extensive documentation available in the [camera_mocap_calibration](https://bitbucket.org/reefavl/camera_mocap_calibration) package. 
